@@ -9,6 +9,9 @@ json_name = os.path.join(result_path, 'result.json')                # csv结果�
 data_name = ['Tm', 'Tx', 'Tn']
 prov_list = ['NS', 'ON', 'QC', 'BC', 'MB', 'NB',
              'NL', 'PE', 'AB', 'SK', 'NT', 'YT', 'NU', 'XX']
+month_list = [3, 6, 9, 12]
+data_color = {'Tm': '#CBDEFA', 'Tx': '#FBE5D5', 'Tn': '#CCCCFF',
+              'Tm_a': '#2B579A', 'Tx_a': 'orange', 'Tn_a': 'purple'}
 is_debug = False
 
 

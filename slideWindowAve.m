@@ -1,9 +1,9 @@
 function [ out ] = slideWindowAve( in, window, stride )
-%slideWindowAve 滑窗平均
-%   in      输入
-%   window  窗口大小
-%   stride  滑动步长
-%   out     输出
+%slideWindowAve 婊戠獥骞冲潎
+%   in      杈撳叆
+%   window  绐楀彛澶у皬
+%   stride  婊戝姩姝ラ暱
+%   out     杈撳嚭
 len = length(in);
 out_len = floor((len - window + 1) / stride);
 out = [];
