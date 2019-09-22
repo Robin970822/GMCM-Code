@@ -1,0 +1,23 @@
+a0 =      -8.784;
+a1 =        1.11;
+b1 =      -1.613;
+a2 =     -0.5083;
+b2 =     -0.8844;
+a3 =     -0.2614;
+b3 =     0.05193;
+a4 =     -0.5876;
+b4 =     -0.2041;
+a5 =     -0.5181;
+b5 =       0.367;
+w =     0.06998;
+Fourier5  = a0 + a1*cos(ta5*w) + b1*sin(ta5*w) + a2*cos(2*ta5*w) + b2*sin(2*ta5*w) + a3*cos(3*ta5*w) + b3*sin(3*ta5*w) + a4*cos(4*ta5*w) + b4*sin(4*ta5*w) + a5*cos(5*ta5*w) + b5*sin(5*ta5*w);
+
+figure;
+hold on;
+plot(t(length(t)-length(tma5)+1:length(t)), tma5, 'bo');
+plot(t(length(t)-length(tma5)+1:length(t)), Fourier5, 'r-', 'LineWidth', 3);
+grid on;
+legend('魁北克省12月滑动平均气温', '魁北克省12月气温滤波波形曲线');
+xlabel('年/year', 'FontSize', 24);
+ylabel('T_m /℃ ', 'FontSize', 24);
+title('魁北克省12月平均气温带通滤波谐波滤波效果', 'FontSize', 24);
