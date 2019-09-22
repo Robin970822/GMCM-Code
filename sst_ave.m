@@ -1,0 +1,10 @@
+figure;
+hold on;
+plot((1:1985), sst_mean, 'o', 'color', [177/255 211/255 238/255],'MarkerFaceColor',[177/255 211/255 238/255]);
+plot((1:12:(12*164)), sst_slide_ave, 'color', [54/255 79/255 161/255], 'LineWidth', 3);
+sst_slide_ave_5 = slideWindowAve(sst_mean, 12*5, 12);
+plot((1:(12):(12*160)), sst_slide_ave_5, 'color', [240/255 31/255 37/255], 'LineWidth', 3);
+title('1850-2015年海洋表面平均温度(SST)变化趋势', 'FontSize', 24);
+xlabel('/月', 'FontSize', 16);
+ylabel('SST/℃', 'FontSize', 16);
+legend('月海洋表面平均温度', '年海洋表面平均温度', '年海洋表面滑动平均温度');
