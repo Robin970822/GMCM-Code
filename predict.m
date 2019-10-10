@@ -38,10 +38,10 @@ figure;
 hold on;
 plot(land_ocean_temperature(:,1), land_ocean_temperature(:,2), 'o', 'color', [134/255 183/255 223/255], 'MarkerFaceColor',[134/255 183/255 223/255]);
 plot(land_ocean_temperature(:,1), land_ocean_temperature(:,3), '-', 'color', [246/255 143/255 76/255], 'LineWidth', 3);
-% plot(year_1950_2045, poly3, 'gp-');
-plot(year_1950_2045, poly4, '-', 'color', [237/255 30/255 36/255], 'LineWidth', 3);
-plot(year_1950_2045, poly5, '-', 'color', [57/255 82/255 164/255], 'LineWidth', 3);
-plot(year_1950_2045, poly4, 'p-', 'color', [237/255 30/255 36/255]);
-plot(year_1950_2045, poly5, 'p-', 'color', [57/255 82/255 164/255]);
-% plot(year_1950_2045, Fourier4, 'r+');
+plot(year_1950_2045, poly4, 'p-', 'color', [237/255 30/255 36/255], 'LineWidth', 3);
+plot(year_1950_2045, poly5, 'p-', 'color', [57/255 82/255 164/255], 'LineWidth', 3);
+legend('全球表面平均温度', '全球表面温度滑动平均曲线', '悲观预测曲线', '乐观预测曲线')
+title('未来25年全球气温预测曲线');
+xlabel('年/year');
+ylabel('全球表面平均温度/℃');
 grid on
